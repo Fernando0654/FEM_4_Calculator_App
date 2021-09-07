@@ -79,6 +79,8 @@ var Calc = /** @class */ (function () {
             || isOperation === '-'
             || isOperation === '*'
             || isOperation === '/') {
+            oneDecimal = 0;
+            console.log(oneDecimal);
             if (limited_symbol >= 1 || result.value === '') {
                 return true;
             }
@@ -109,7 +111,7 @@ var Calc = /** @class */ (function () {
         result.value = resultado.toFixed(2).toString();
     };
     Calc.prototype.division = function () {
-        resultado = parseFloat(numbers[numbers.length - 1]) / parseFloat(numbers[numbers.length - 2]);
+        resultado = parseFloat(numbers[numbers.length - 2]) / parseFloat(numbers[numbers.length - 1]);
         numbers.push(resultado);
         result.value = resultado.toFixed(2).toString();
     };
@@ -139,10 +141,10 @@ var Calc = /** @class */ (function () {
         currentNumber = result.value;
     };
     Calc.prototype.setDecimal = function () {
-        ++oneDecimal;
-        if (oneDecimal >= 2) {
+        if (oneDecimal >= 1) {
             return;
         }
+        oneDecimal++;
         result.value = currentNumber + '.';
         currentNumber = result.value;
     };

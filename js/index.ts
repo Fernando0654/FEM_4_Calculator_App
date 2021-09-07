@@ -79,6 +79,8 @@ class Calc {
             || isOperation === '-'
             || isOperation === '*'
             || isOperation === '/') {
+            oneDecimal = 0;
+            console.log(oneDecimal);
             if (limited_symbol >= 1 || result.value === '') {
                 return true;
             }
@@ -109,7 +111,7 @@ class Calc {
         result.value = resultado.toFixed(2).toString();
     }
     division() {
-        resultado = parseFloat(numbers[numbers.length - 1]) / parseFloat(numbers[numbers.length - 2]);
+        resultado = parseFloat(numbers[numbers.length - 2]) / parseFloat(numbers[numbers.length - 1]);
         numbers.push(resultado);
         result.value = resultado.toFixed(2).toString();
     }
@@ -138,17 +140,17 @@ class Calc {
         currentNumber = result.value;
     }
     setDecimal() {
-        ++oneDecimal;
-        if( oneDecimal >= 2 ) {
+        if (oneDecimal >= 1) {
             return;
         }
+        oneDecimal++;
         result.value = currentNumber + '.';
         currentNumber = result.value;
     }
     getOutput() {
         if (firstTime) {
             return;
-        }
+        }        
         numbers.push(result.value);
         this.whatOperationIs(symbol[symbol.length - 1]);
         this.reset(false);

@@ -1,0 +1,344 @@
+body {
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: transparent;
+  width: 35%;
+  margin: auto;
+  margin-top: 5%;
+}
+
+header h1 {
+  display: block;
+  width: 50%;
+  font-family: "Spartan", sans-serif;
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+header .switch-style {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 50%;
+}
+
+header .switch-style span {
+  display: block;
+  padding: 0.5rem;
+  font-family: "Spartan", sans-serif;
+  font-size: 0.8rem;
+  color: #fff;
+}
+
+header .switch-style .switch-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 4em;
+  height: 100%;
+  position: relative;
+  border-radius: 30px;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+header .switch-style .switch-box .switch-button-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  position: absolute;
+  bottom: 0%;
+}
+
+header .switch-style .switch-box .switch-button-text span {
+  height: 3em;
+  font-family: "Spartan", sans-serif;
+  font-size: 0.6rem;
+  color: #fff;
+}
+
+header .switch-style .switch-box .switch-button {
+  width: 15px;
+  height: 15px;
+  margin: 0.3em;
+  border-radius: 100%;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: transparent;
+  width: 35%;
+  margin: auto;
+}
+
+main .screen {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 95%;
+  padding: 1em;
+  border-radius: 15px;
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
+}
+
+main .screen .historial {
+  font-family: "Spartan", sans-serif;
+  font-size: 1rem;
+  color: #eee5e5;
+}
+
+main .screen input[type="text"] {
+  display: block;
+  width: 90%;
+  text-align: end;
+  margin: auto;
+  padding: 0.3em;
+  font-family: "Spartan", sans-serif;
+  font-size: 2.5rem;
+  color: #fff;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+main .basic-functions {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-columns: 20% 20% 20% 20%;
+  grid-auto-rows: 85% 12%;
+      grid-template-areas: "one two three four" "buttons buttons buttons buttons";
+  gap: 1em;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+  margin-top: 5%;
+  padding: 0.5em;
+  border-radius: 15px;
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
+}
+
+main .basic-functions button {
+  width: 100%;
+  font-family: "Spartan", sans-serif;
+  font-size: 1.5rem;
+  color: #585a64;
+  padding: 0.5em 1em;
+  -webkit-box-shadow: 0 0.19em 0em #a99c97;
+          box-shadow: 0 0.19em 0em #a99c97;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+main .basic-functions #del,
+main .basic-functions #reset {
+  display: block;
+  text-align: center;
+  background-color: #647299;
+  color: #fff;
+  font-size: 1.3rem;
+  padding: 0.7em;
+  -webkit-box-shadow: 0 0.19em 0em #4e5a81;
+          box-shadow: 0 0.19em 0em #4e5a81;
+}
+
+main .basic-functions #output {
+  display: block;
+  background-color: #d13f30;
+  color: #fff;
+  -webkit-box-shadow: 0 0.19em 0em #902418;
+          box-shadow: 0 0.19em 0em #902418;
+}
+
+main .basic-functions .btnNum {
+  display: block;
+  background-color: #eae3db;
+}
+
+main .basic-functions .col-1,
+main .basic-functions .col-2,
+main .basic-functions .col-3,
+main .basic-functions .col-4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1em;
+}
+
+main .basic-functions .col-1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: one;
+}
+
+main .basic-functions .col-2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: two;
+}
+
+main .basic-functions .col-3 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: three;
+}
+
+main .basic-functions .col-4 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 4;
+  grid-area: four;
+}
+
+main .basic-functions .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 1em;
+  margin-top: 1em;
+  margin-bottom: 5em;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: buttons;
+}
+
+footer .attribution {
+  color: white;
+  font-size: 11px;
+  text-align: center;
+  padding: 1.6em;
+}
+
+footer .attribution a {
+  font-family: "Spartan", sans-serif;
+  font-size: 1rem;
+  color: #ff0;
+}
+
+@media (max-width: 1000px) {
+  header {
+    width: 50%;
+  }
+  main {
+    width: 50%;
+  }
+  main .basic-functions #del,
+  main #reset {
+    font-size: 1rem;
+    padding: 1.1em;
+  }
+}
+
+@media (max-width: 784px) {
+  header {
+    width: 70%;
+  }
+  main {
+    width: 70%;
+  }
+  main .basic-functions #del,
+  main #reset {
+    font-size: 1rem;
+    padding: 1.1em;
+  }
+}
+
+@media (max-width: 500px) {
+  header {
+    width: 90%;
+  }
+  main {
+    width: 90%;
+  }
+  main .basic-functions #del,
+  main #reset {
+    font-size: 1rem;
+    padding: 1.1em;
+  }
+  footer .attribution {
+    font-size: 11px;
+    padding: 1.6em;
+  }
+  footer .attribution a {
+    color: #ff0;
+    font-size: 11px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

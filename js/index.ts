@@ -108,7 +108,7 @@ class Calc {
         result.value = resultado.toFixed(2).toString();
     }
     division() {
-        resultado = parseFloat(numbers[numbers.length - 2]) / parseFloat(numbers[numbers.length - 1]);
+        resultado = parseFloat(numbers[numbers.length - 1]) / parseFloat(numbers[numbers.length - 2]);
         numbers.push(resultado);
         result.value = resultado.toFixed(2).toString();
     }

@@ -21,8 +21,8 @@ body {
 header {
   @include flexBox(flex, row, center, center);
   background-color: transparent;
-  min-width: 35em;
-  max-width: 35em;
+  min-width: 50em;
+  max-width: 50em;
   margin: auto;
   margin-top: 5%;
   h1 {
@@ -68,8 +68,8 @@ header {
 main {
   @include flexBox(flex, column, center, center);
   background-color: transparent;
-  min-width: 35em;
-  max-width: 35em;
+  min-width: 50em;
+  max-width: 50em;
   margin: auto;
   .screen {
     @include flexBox(flex, column, flex-end, center);
@@ -114,6 +114,7 @@ main {
       padding: 0.5em 1em;
       box-shadow: 0 0.19em 0em #a99c97;
       border-radius: 5px;
+      font-size: 1.3rem;
       border: none;
       text-align: center;
       cursor: pointer;
@@ -123,6 +124,7 @@ main {
       display: block;
       text-align: center;
       background-color: #647299;
+      font-size: 1.3rem;
       color: #fff;
       box-shadow: 0 0.19em 0em #4e5a81;
     }
@@ -130,6 +132,7 @@ main {
       display: block;
       background-color: #d13f30;
       color: #fff;
+      font-size: 1.3rem;
       box-shadow: 0 0.19em 0em #902418;
     }
     .btnNum {
@@ -179,46 +182,10 @@ footer {
   }
 }
 
-@media (max-width: 1000px) {
-  header {
-    width: 50%;
-  }
-  main {
-    width: 50%;
-    .basic-functions #del,
-    #reset {
-      font-size: 1rem;
-      padding: 1.1em;
-    }
-  }
-}
 
-@media (max-width: 784px) {
-  header {
-    width: 70%;
-  }
-  main {
-    width: 70%;
-    .basic-functions #del,
-    #reset {
-      font-size: 1rem;
-      padding: 1.1em;
-    }
-  }
-}
 
 @media (max-width: 500px) {
-  header {
-    width: 90%;
-  }
-  main {
-    width: 90%;
-    .basic-functions #del,
-    #reset {
-      font-size: 1rem;
-      padding: 1.1em;
-    }
-  }
+
   footer {
     .attribution {
       font-size: 11px;

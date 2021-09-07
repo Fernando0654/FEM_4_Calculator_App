@@ -19,8 +19,8 @@ header {
       -ms-flex-pack: center;
           justify-content: center;
   background-color: transparent;
-  min-width: 35em;
-  max-width: 35em;
+  min-width: 50em;
+  max-width: 50em;
   margin: auto;
   margin-top: 5%;
 }
@@ -118,8 +118,8 @@ main {
       -ms-flex-pack: center;
           justify-content: center;
   background-color: transparent;
-  min-width: 35em;
-  max-width: 35em;
+  min-width: 50em;
+  max-width: 50em;
   margin: auto;
 }
 
@@ -195,6 +195,7 @@ main .basic-functions button {
   -webkit-box-shadow: 0 0.19em 0em #a99c97;
           box-shadow: 0 0.19em 0em #a99c97;
   border-radius: 5px;
+  font-size: 1.3rem;
   border: none;
   text-align: center;
   cursor: pointer;
@@ -205,6 +206,7 @@ main .basic-functions #reset {
   display: block;
   text-align: center;
   background-color: #647299;
+  font-size: 1.3rem;
   color: #fff;
   -webkit-box-shadow: 0 0.19em 0em #4e5a81;
           box-shadow: 0 0.19em 0em #4e5a81;
@@ -214,6 +216,7 @@ main .basic-functions #output {
   display: block;
   background-color: #d13f30;
   color: #fff;
+  font-size: 1.3rem;
   -webkit-box-shadow: 0 0.19em 0em #902418;
           box-shadow: 0 0.19em 0em #902418;
 }
@@ -294,46 +297,7 @@ footer .attribution a {
   color: #ff0;
 }
 
-@media (max-width: 1000px) {
-  header {
-    width: 50%;
-  }
-  main {
-    width: 50%;
-  }
-  main .basic-functions #del,
-  main #reset {
-    font-size: 1rem;
-    padding: 1.1em;
-  }
-}
-
-@media (max-width: 784px) {
-  header {
-    width: 70%;
-  }
-  main {
-    width: 70%;
-  }
-  main .basic-functions #del,
-  main #reset {
-    font-size: 1rem;
-    padding: 1.1em;
-  }
-}
-
 @media (max-width: 500px) {
-  header {
-    width: 90%;
-  }
-  main {
-    width: 90%;
-  }
-  main .basic-functions #del,
-  main #reset {
-    font-size: 1rem;
-    padding: 1.1em;
-  }
   footer .attribution {
     font-size: 11px;
     padding: 1.6em;

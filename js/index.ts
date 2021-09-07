@@ -10,6 +10,7 @@ let prevSymbol: string = '';
 let resultado: number = null;
 let limited_symbol = 0;
 let firstTime: boolean = true;
+let oneDecimal: number = 0;
 const formmatter = new Intl.NumberFormat('en');
 
 class Calc {
@@ -41,7 +42,7 @@ class Calc {
         if (numero.toString().length > 13) {
             return;
         }
-        result.value = formmatter.format(parseFloat(currentNumber));
+        result.value = formmatter.format(parseFloat(currentNumber)).toString();
         limited_symbol = 0;
     }
     setSymbol(symb: string) {
@@ -83,7 +84,7 @@ class Calc {
             }
             symbol.push(isOperation);
             prevSymbol = symbol[symbol.length - 2];
-            numbers.push(result.value);
+            numbers.push(currentNumber);
             if (firstTime) {
                 return true;
             }
@@ -137,6 +138,10 @@ class Calc {
         currentNumber = result.value;
     }
     setDecimal() {
+        ++oneDecimal;
+        if( oneDecimal >= 2 ) {
+            return;
+        }
         result.value = currentNumber + '.';
         currentNumber = result.value;
     }

@@ -10,6 +10,7 @@ var prevSymbol = '';
 var resultado = null;
 var limited_symbol = 0;
 var firstTime = true;
+var oneDecimal = 0;
 var formmatter = new Intl.NumberFormat('en');
 var Calc = /** @class */ (function () {
     function Calc(exNumero) {
@@ -40,7 +41,7 @@ var Calc = /** @class */ (function () {
         if (numero.toString().length > 13) {
             return;
         }
-        result.value = formmatter.format(parseFloat(currentNumber));
+        result.value = formmatter.format(parseFloat(currentNumber)).toString();
         limited_symbol = 0;
     };
     Calc.prototype.setSymbol = function (symb) {
@@ -83,7 +84,7 @@ var Calc = /** @class */ (function () {
             }
             symbol.push(isOperation);
             prevSymbol = symbol[symbol.length - 2];
-            numbers.push(result.value);
+            numbers.push(currentNumber);
             if (firstTime) {
                 return true;
             }
@@ -108,7 +109,7 @@ var Calc = /** @class */ (function () {
         result.value = resultado.toFixed(2).toString();
     };
     Calc.prototype.division = function () {
-        resultado = parseFloat(numbers[numbers.length - 2]) / parseFloat(numbers[numbers.length - 1]);
+        resultado = parseFloat(numbers[numbers.length - 1]) / parseFloat(numbers[numbers.length - 2]);
         numbers.push(resultado);
         result.value = resultado.toFixed(2).toString();
     };
@@ -138,6 +139,10 @@ var Calc = /** @class */ (function () {
         currentNumber = result.value;
     };
     Calc.prototype.setDecimal = function () {
+        ++oneDecimal;
+        if (oneDecimal >= 2) {
+            return;
+        }
         result.value = currentNumber + '.';
         currentNumber = result.value;
     };

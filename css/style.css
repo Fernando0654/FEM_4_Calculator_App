@@ -19,8 +19,8 @@ header {
       -ms-flex-pack: center;
           justify-content: center;
   background-color: transparent;
-  min-width: 50em;
-  max-width: 50em;
+  min-width: 55em;
+  max-width: 55em;
   margin: auto;
   margin-top: 5%;
 }
@@ -137,8 +137,8 @@ main .screen {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 95%;
-  padding: 1em;
+  width: 100%;
+  padding: 3em;
   border-radius: 15px;
   -webkit-transition: 1s ease;
   transition: 1s ease;
@@ -170,7 +170,7 @@ main .basic-functions {
   grid-auto-columns: 20% 20% 20% 20%;
   grid-auto-rows: 85% 12%;
       grid-template-areas: "one two three four" "buttons buttons buttons buttons";
-  gap: 1em;
+  gap: 2em;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -180,10 +180,10 @@ main .basic-functions {
   width: 100%;
   height: 100%;
   margin-top: 5%;
-  padding: 0.5em;
   border-radius: 15px;
   -webkit-transition: 1s ease;
   transition: 1s ease;
+  padding: 3em;
 }
 
 main .basic-functions button {
@@ -191,7 +191,7 @@ main .basic-functions button {
   font-family: "Spartan", sans-serif;
   font-size: 1.5rem;
   color: #585a64;
-  padding: 0.5em 1em;
+  padding: .5em;
   -webkit-box-shadow: 0 0.19em 0em #a99c97;
           box-shadow: 0 0.19em 0em #a99c97;
   border-radius: 5px;
@@ -237,7 +237,7 @@ main .basic-functions .col-4 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 1em;
+  gap: 2em;
 }
 
 main .basic-functions .col-1 {
@@ -276,8 +276,7 @@ main .basic-functions .buttons {
       -ms-flex-align: start;
           align-items: flex-start;
   gap: 1em;
-  margin-top: 1em;
-  margin-bottom: 5em;
+  margin: 2em 0em;
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   -ms-grid-column-span: 4;

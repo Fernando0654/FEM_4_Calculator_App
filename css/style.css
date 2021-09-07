@@ -1,6 +1,7 @@
 body {
   -webkit-transition: 1s ease;
   transition: 1s ease;
+  font-size: 50%;
 }
 
 header {
@@ -18,7 +19,8 @@ header {
       -ms-flex-pack: center;
           justify-content: center;
   background-color: transparent;
-  width: 35%;
+  min-width: 35em;
+  max-width: 35em;
   margin: auto;
   margin-top: 5%;
 }
@@ -116,7 +118,8 @@ main {
       -ms-flex-pack: center;
           justify-content: center;
   background-color: transparent;
-  width: 35%;
+  min-width: 35em;
+  max-width: 35em;
   margin: auto;
 }
 
@@ -193,6 +196,7 @@ main .basic-functions button {
           box-shadow: 0 0.19em 0em #a99c97;
   border-radius: 5px;
   border: none;
+  text-align: center;
   cursor: pointer;
 }
 
@@ -202,8 +206,6 @@ main .basic-functions #reset {
   text-align: center;
   background-color: #647299;
   color: #fff;
-  font-size: 1.3rem;
-  padding: 0.7em;
   -webkit-box-shadow: 0 0.19em 0em #4e5a81;
           box-shadow: 0 0.19em 0em #4e5a81;
 }

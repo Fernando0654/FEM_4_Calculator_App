@@ -15,12 +15,14 @@ $bg_basicF_theme1: #252d44d0;
 
 body {
   transition: 1s ease;
+  font-size: 50%;
 }
 
 header {
   @include flexBox(flex, row, center, center);
   background-color: transparent;
-  width: 35%;
+  min-width: 35em;
+  max-width: 35em;
   margin: auto;
   margin-top: 5%;
   h1 {
@@ -66,7 +68,8 @@ header {
 main {
   @include flexBox(flex, column, center, center);
   background-color: transparent;
-  width: 35%;
+  min-width: 35em;
+  max-width: 35em;
   margin: auto;
   .screen {
     @include flexBox(flex, column, flex-end, center);
@@ -112,6 +115,7 @@ main {
       box-shadow: 0 0.19em 0em #a99c97;
       border-radius: 5px;
       border: none;
+      text-align: center;
       cursor: pointer;
     }
     #del,
@@ -120,8 +124,6 @@ main {
       text-align: center;
       background-color: #647299;
       color: #fff;
-      font-size: 1.3rem;
-      padding: 0.7em;
       box-shadow: 0 0.19em 0em #4e5a81;
     }
     #output {

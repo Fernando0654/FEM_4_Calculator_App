@@ -62,7 +62,7 @@ header .switch-style .switch-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 4em;
+  width: 8em;
   height: 100%;
   position: relative;
   border-radius: 30px;
